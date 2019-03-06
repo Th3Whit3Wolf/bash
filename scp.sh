@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#sshpass -p 'karrick' scp -v $1 david@104.248.30.216:/home/david/$2 2>&1 | grep -v debug1
+sshpass -p 'karrick' rsync -av --progress $1 david@104.248.30.216:/home/david/$2
